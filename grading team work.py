@@ -38,6 +38,18 @@ elif avg >= 80 and avg < 90: #added a semicolon at the end of 90
     letter_grade = "B"
 elif avg > 69 and avg < 80:
     letter_grade = "C"    #the right quotation was missing after the letter C
+'''
+Logic error: Use a proper range for the average.
+
+If the average is in the range  of 60 <= avg < 70, letter_grade is "D."
+If the average is in the range of 0<= avg < 60, letter_grade is "F."
+
+elif avg >= 60 and avg < 70:
+     letter_grade = "D"
+elif avg >= 0 and avg < 60:
+     letter_grade = "F"
+     
+'''
 elif avg <= 69 and avg >= 65:
     letter_grade = "D"
 elif avg <= 65 and avg >= 0: #removed the semicolon in fornt of the elif and added an expression instead 
@@ -45,7 +57,14 @@ elif avg <= 65 and avg >= 0: #removed the semicolon in fornt of the elif and add
 
 for grade in grades:
     print("Exam: " + str(grade))
+    
+'''
+Print the average and letter grade out of the for loop.
+Syntax error: No indentation for print statements
 
+print("Average: " + str(avg))
+print("Grade: " + str(letter_grade))
+'''
     print("Average: " + str(avg))
 
     print("Grade: " + letter_grade)
