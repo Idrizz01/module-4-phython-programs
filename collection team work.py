@@ -15,6 +15,11 @@ Authors = {
     "Anthony Trollope": "1882",
     "Gerard Manley Hopkins": "1889", }   #the mistake occured in this line so we added a comma and changed the parenthesis to the right one because it had the wrong parenthesis.
 
+
+''' 
+for authors, date in Authors.items():
+    print("%s" % authors + " died in " + "%s." %date)
+'''
 for Authors, date in authors.items():
     print("%s" % authors + " died in " + "%d." % Date)   #there was no parenthesis after the date, so we added one and also an indent.
 
